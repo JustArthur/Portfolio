@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+
+
+/**!-----------------   NavBar  -----------------!**/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #363636;
+    z-index: 10;
+}
+
+a.logo {
+    text-decoration: none; 
+}
+
+a.logo h2 {
+    font-family: 'Aguafina Script';
+    font-size: 40px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    color: #363636;
+}
+
+a.logo .B {
+    color: #FFCA3B;
+    font-family: 'Aguafina Script';
+    font-size: 40px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 50px;
+}
+
+nav ul li a {
+    color: #363636;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFCA3B;
+    transition: 0.3s;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    background-color: #FFCA3B;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);
+}
+
+button:hover {
+    transform: scale(1.1);
+}

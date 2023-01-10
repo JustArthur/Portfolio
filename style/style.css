@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+
+
+
+/*******************************************************************/
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    user-select: none;
+}
+
+span.effect {
+    color: #FFCA3B;
+    font-weight: 900;
+}
+
+span.effect-2, .text a {
+    color: #FFCA3B;
+    font-weight: 500;
+}
+
+.active {
+    color: #FFCA3B;
+}
+/*******************************************************************/
+
+
+
+
+
+
+/**?-----------------   PAGE INDEX  -----------------?**/
+/**!-----------------   Container 1  -----------------!**/
+.container-start {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+p.title {
+    position: absolute;
+    top: 15%;
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 40px;
+    color: #777777;
+    animation: morph-effect 10s infinite ease-in-out;
+}
+
+p.title-etude {
+    position: absolute;
+    top: 15%;
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 40px;
+    color: #777777;
+}
+
+p.title:nth-child(1) {
+    animation-delay: -10s;
+}
+
+p.title:nth-child(2) {
+    animation-delay: -5s;
+}
+
+@keyframes morph-effect {
+    0%, 20%, 100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+    40%, 80% {
+        filter: blur(16px);
+        opacity: 0;
+    }
+}
+
+p.title span.nom {
+    font-weight: 900;
+    color: #FFCA3B;
+}
+
+.container-start img.perso-1 {
+    position: absolute;
+    top: 25%;
+    width: 1000px;
+    height: 650px;
+}
+
+
+/**!-----------------   Container 2  -----------------!**/
+.container-jv {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-jv img.perso-2 {
+    width: 675px;
+    height: 609px;
+    margin-left: 120px;
+}
+
+.title-jv {
+    font-weight: 500;
+    font-size: 40px;
+    color: #363636;
+    margin-right: 100px;
+    line-height: 25px;
+}
+
+.title-jv span.text {
+    font-weight: 200;
+    font-size: 20px;
+    color: #777777;
+}
+
+
+/**!-----------------   Container 3  -----------------!**/
+.container-pv {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-pv img.perso-3 {
+    width: 588.17px;
+    height: 731px;
+    margin-right: 120px;
+}
+
+.title-pv {
+    font-weight: 500;
+    font-size: 40px;
+    color: #363636;
+    margin-left: 100px;
+    line-height: 25px;
+}
+
+.title-pv span.text {
+    font-weight: 200;
+    font-size: 20px;
+    color: #777777;
+}
+
+
+/**!-----------------   Container 4  -----------------!**/
+.container-livre {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-livre img.perso-4 {
+    width: 667.25px;
+    height: 652.33px;
+    margin-left: 120px;
+}
+
+.title-livre {
+    font-weight: 500;
+    font-size: 40px;
+    color: #363636;
+    margin-right: 100px;
+    line-height: 25px;
+}
+
+.title-livre span.text {
+    font-weight: 200;
+    font-size: 20px;
+    color: #777777;
+}
+
+
+
+
+/**?-----------------   PAGE CERTIFICATIONS  -----------------?**/
+.container-certif {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+p.title-certif {
+    position: absolute;
+    top: 15%;
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 40px;
+    color: #777777;
+}
+
+p.title-certif span.nom {
+    font-weight: 900;
+    color: #FFCA3B;
+}
+
+.container-certif img.perso-5 {
+    position: absolute;
+    top: 25%;
+    width: 759px;
+    height: 550px;
+}
+
+.bulles img {
+    width: 315px;
+    height: 277px;
+    transition: 0.5s;
+}
+
+.bulles img.img-1 {
+    position: absolute;
+    right: 20%;
+    top: 22%;
+}
+
+.bulles img.img-2 {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.bulles img.img-3 {
+    position: absolute;
+    left: 25%;
+    top: 70%;
+}
+
+.bulles a img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+
+
+/**?-----------------   PAGE ETUDES  -----------------?**/
+/**!-----------------   Container 1  -----------------!**/
+.container-start-etude {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+p.title-etude {
+    position: absolute;
+    top: 15%;
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 40px;
+    color: #777777;
+}
+
+p.title span.nom {
+    font-weight: 900;
+    color: #FFCA3B;
+}
+
+.container-start-etude img.perso-9 {
+    position: absolute;
+    top: 25%;
+    width: 652px;
+    height: 629px;
+}
+
+
+/**!-----------------   Container 2  -----------------!**/
+.container-opt {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-opt img.perso-10 {
+    width: 767px;
+    height: 818px;
+    margin-left: 120px;
+}
+
+.title-opt {
+    font-weight: 500;
+    font-size: 40px;
+    color: #363636;
+    margin-right: 100px;
+    line-height: 25px;
+}
+
+.title-opt span.text {
+    font-weight: 200;
+    font-size: 20px;
+    color: #777777;
+}
+
+
+/**!-----------------   Container 3  -----------------!**/
+.container-info {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-info img.perso-11 {
+    width: 757px;
+    height: 594px;
+    margin-right: 120px;
+}
+
+.title-info {
+    font-weight: 500;
+    font-size: 40px;
+    color: #363636;
+    margin-left: 100px;
+    line-height: 25px;
+}
+
+.title-info span.text {
+    font-weight: 200;
+    font-size: 20px;
+    color: #777777;
+}
