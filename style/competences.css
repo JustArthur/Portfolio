@@ -164,6 +164,37 @@ a {
 }
 
 
+.text.compt a {
+    position: relative;
+    color: var(--text-color-black);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 200px;
+}
+
+.text.compt a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--background-color-yellow);
+    transition: 0.2s;
+}
+
+.text.compt a:hover::before {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.text.compt a:hover {
+    transition: 0.3s;
+}
+
 
 
 
