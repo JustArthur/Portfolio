@@ -5,86 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portfolio de l'étudiant Arthur bourst." />
+    <!-- Icon pour le mobileMenu -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/animation.css">
 
-    <script src="js/index.js"></script>
-
-    <title>Bourst Arthur - Accueil</title>
+    <title>Portfolio - Accueil</title>
 </head>
-<body>
-    <!-- NavBar 1-->
-    <nav>
-        <a href="index.html" class="logo"><h2>Arthur.<span class="B">B</span></h2></a>
-        <ul>
-            <li><a href="certif.html">Certifications</a></li>
-            <li><a href="etude.html">Etudes</a></li>
-            <li><a href="competences.html">Compétences</a></li>
-            <li><a href="veille.html">Veille</a></li>
-        </ul>
-        <a href="cv/CV - Bourst Arthur.pdf" target="_blank"><button type="button">Télécharger son CV</button></a>
+<body id="body">
+
+    <!-- NavBar -->
+    <nav class="navbar" id="nav">
+        <div class="container flex">
+            <span class="logo">Arthur.<span class="b">B</span></span>
+
+            <div class="links" id="links">
+                <a href="arthur-bourst.fr">Accueil</a>
+                <a href="arthur-bourst.fr/pages/certification.html">Certifications</a>
+                <a href="arthur-bourst.fr/pages/etudes.html">Etudes</a>
+                <a href="arthur-bourst.fr/pages/competences.html">Compétences</a>
+                <a href="arthur-bourst.fr/pages/veille.html">Veille</a>
+
+                <a class="btn-download" href="src/pdf/cv.pdf" target="_blank">Télécharger son CV</a>
+            </div>
+        </div>
+        <div class="burger">
+            <i class="ri-menu-line active" id="menu" onclick="navbarMobile('open')"></i>
+            <i class="ri-close-line" id="close" onclick="navbarMobile('close')"></i>
+        </div>
     </nav>
 
-    <!-- Container 1-->
-    <div class="container-start">
-        <p class="title">👋 Bienvenue sur le portfolio d'<span class="effect">Arthur Bourst</span>.</p>
-        <p class="title">💻 Etudiant en <span class="effect">BTS SIO</span> à Saint Luc.</p>
-        <img src="img/img1.png" class="perso-1" alt="">
-    </div>
+    <!-- Section de sa présentation -->
+    <section class="presentation">
+        <div class="content__pres">
+            <h1 class="title-pres">👋 Bienvenue sur le portfolio d'Arthur Bourst</h1>
 
+            <img src="src/img/img1.png" alt="accueil-image" class="image-pres">
+        </div>
+    </section>
 
-    <!-- Container 2-->
-    <div class="container-jv reveal">
-        <img src="img/img2.png" class="perso-2" alt="" >
-        <p class="title-jv">🎮 Il aime joué aux <span class="effect">jeux vidéo</span>.<br><br><br>
-            <span class="text">
-            Arthur est un joueur occasionnel, il aime principalement<br>
-            les <span class="effect-2">jeux en solo</span> que se soit aventure, course automobile ou<br>
-            même fast-FPS. <span class="effect-2">Joué avec ses amis</span> et pour lui une <br>
-            excellente façon de s’amuser sur les jeux vidéo en ligne ou <br>
-            co-op sinon il se lasse très vite du jeu.
-            </span>
-        </p>
-    </div>
+    <!-- Section a propos de lui -->
+    <section class="propos">
+        <div class="content__propos">
+            <img src="src/img/img2.png" alt="propos-image" class="image-propos">
 
+            <div class="text">
+                <h2>🎮 Il aime jouer aux <span class="yellow">jeux vidéo</span>.</h2>
+                <p>Arthur est un joueur occasionnel, il aime principalement
+                    les jeux en solo que se soit aventure, course automobile ou
+                    même fast-FPS. Jouer avec ses amis et pour lui une
+                    excellente façon de s'amuser sur les jeux vidéo en ligne ou
+                    co-op sinon il se lasse très vite du jeu.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Container 3-->
-    <div class="container-pv reveal">
-        <p class="title-pv">📸 La <span class="effect">photographie virtuelle</span> aussi.<br><br><br>
-            <span class="text">
-                Depuis la <span class="effect-2">découverte des modes photo</span> dans les jeux vidéo<br>
-                Arthur en a fait une <span class="effect-2">nouvelle passion</span>, une petite<br>
-                communauté sur <a href="https://www.instagram.com/su_apt_install_kuma/?hl=fr" target="_blank">Instagram</a> le suit pour ses réalisations sur<br>
-                The Crew 2, Forza Horizon, Doom, etc...
-            </span>
-        </p>
-        <img src="img/img3.png" class="perso-3" alt="">
-    </div>
+    <!-- Section du loisir -->
+    <section class="photo">
+        <div class="content__photo">
+            <div class="text">
+                <h2>📸 La <span class="yellow">photographie virtuelle</span> aussi.</h2>
+                <p>Depuis la découverte des modes photo dans les jeux vidéo
+                    Arthur en a fait une nouvelle passion, une petite
+                    communauté sur <a href="https://www.instagram.com/su_apt_install_kuma/?hl=fr" target="_blank">Instagram</a> le suit pour ses réalisations sur
+                    The Crew 2, Forza Horizon, Doom, etc...</p>
+            </div>
 
+            <img src="src/img/img3.png" alt="propos-image" class="image-propos">
+        </div>
+    </section>
 
-
-    <!-- Footer -->
-    <hr><br><br><br>
-    <footer>
-        <ul class="legal">
-            <h1>Informations légales</h1>
-            <p>Ce site est soumis à des <a href="#">mentions légales</a><br>
-            et à des <a href="#">conditions d'utilisation</a>.</p>
-        </ul>
-
-        <ul class="carte-site">
-            <h1>Carte du site internet</h1>
-            <li class="list-item">> Acceuil</li>
-            <li class="list-item">> Certifications</li>
-            <li class="list-item">> Etudes</li>
-            <li class="list-item">> Compétences</li>
-            <li class="list-item">> Veille</li>
-            <li class="list-item del"><a href="cv/CV - Bourst Arthur.pdf" target="_blank">> Télécharger le CV</a></li>
-        </ul>
-    </footer>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/mobileMenu.js"></script>
 </body>
 </html>

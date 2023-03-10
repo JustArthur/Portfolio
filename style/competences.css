@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    user-select: none;
+}
+
+:root {
+    --body-color: #FFFFFF;
+
+    --background-color-white: #FFFFFF;
+    --background-color-yellow: #FFCA3B;
+
+    --text-color-black: #000000;
+    --text-color-yellow: #FFCA3B;
+    --text-color-white: #FFFFFF;
+
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --p-font-size: 1rem;
+}
+
+body {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-color);
+}
+
+body.overflow {
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--text-color-black);
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    color: var(--text-color-black);
+    font-size: var(--h2-font-size);
+}
+
+p {
+    color: var(--text-color-black);
+    font-size: var(--p-font-size);
+}
+
+.yellow {
+    color: var(--text-color-yellow);
+}
+
+a {
+    color: var(--text-color-yellow);
+    text-decoration: underline;
+}
+
+
+
+/* -- Section présentation étude -- */
+.presentation__competence {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    margin-top: 65px;
+}
+
+.presentation__competence .container__competence {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.container__competence .title-pres {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.container__competence img {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+}
+
+
+
+
+
+/* -- Section projetDev -- */
+.projetDev {
+    height: max-content;
+    width: 100%;
+    display: flex;
+}
+
+.projetDev .content__projetDev {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.content__projetDev .text {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content__projetDev img {
+    width: 100%;
+    max-width: 700px;
+    min-width: 200px;
+}
+
+
+
+/* -- Section tableauCompt -- */
+.tableauCompt {
+    height: max-content;
+    width: 100%;
+    display: flex;
+}
+
+.tableauCompt .content__tableauCompt {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.content__tableauCompt .text {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content__tableauCompt img {
+    width: 100%;
+    max-width: 700px;
+    min-width: 50px;
+}
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    :root {
+        --h1-font-size: 2rem;
+        --h2-fon-size: 1.5rem;
+        --p-font-size: 1rem;
+    }
+
+    .projetDev .content__projetDev,
+    .tableauCompt .content__tableauCompt {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content__projetDev .text,
+    .content__tableauCompt .text {
+        width: 100%;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon pour le mobileMenu -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="../style/etudes.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+
+    <title>Portfolio - Etudes d'Arthur</title>
+</head>
+<body id="body">
+
+    <!-- NavBar -->
+    <nav class="navbar" id="nav">
+        <div class="container flex">
+            <span class="logo">Arthur.<span class="b">B</span></span>
+
+            <div class="links" id="links">
+                <a href="arthur-bourst.fr">Accueil</a>
+                <a href="arthur-bourst.fr/pages/certification.html">Certifications</a>
+                <a href="arthur-bourst.fr/pages/etudes.html">Etudes</a>
+                <a href="arthur-bourst.fr/pages/competences.html">Compétences</a>
+                <a href="arthur-bourst.fr/pages/veille.html">Veille</a>
+
+                <a class="btn-download" href="src/pdf/cv.pdf" target="_blank">Télécharger son CV</a>
+            </div>
+        </div>
+        <div class="burger">
+            <i class="ri-menu-line active" id="menu" onclick="navbarMobile('open')"></i>
+            <i class="ri-close-line" id="close" onclick="navbarMobile('close')"></i>
+        </div>
+    </nav>
+
+    <!-- Section presentation etude -->
+    <section class="presentation__etude">
+        <div class="container__etude">
+            <h1 class="title-pres">🎒 Les études d'Arthur on était très compliqué.</h1>
+
+            <img src="../src/img/img9.png" alt="etude-image" class="image-pres">
+        </div>
+    </section>
+
+
+    <!-- Section opticien -->
+    <section class="opticien">
+        <div class="content__opticien">
+            <img src="../src/img/img10.png" alt="opticien-image" class="image-propos">
+
+            <div class="text">
+                <h2>😎 Baccalauréat Professionel <span class="yellow">Optique</span>.</h2>
+                <p>Il est allé en <span class="yellow">Bac. pro. Optique et Lunetterie</span> mais ce qui
+                    touché la vente à des clients ne lui plaisais pas. Arthur a
+                    donc fait une <span class="yellow">ré-orientation en BTS SIO</span> après avoir obtenu
+                    son Bac. pro. Optique. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section informatique -->
+    <section class="informatique">
+        <div class="content__informatique">
+            <div class="text">
+                <h2>💻 <span class="yellow">L'informatique</span> une grande passion.</h2>
+                <p>Une fois son Bac. Pro Optique obtenu, Arthur est parti dans
+                    une filière où il n'y connaissais presque rien mais il a réussi à
+                    se plaire et continuer dans cette branche pour en faire son futur métier. </p>
+            </div>
+
+            <img src="../src/img/img11.png" alt="propos-image" class="image-propos">
+        </div>
+    </section>
+
+    
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/mobileMenu.js"></script>
+</body>
+</html>

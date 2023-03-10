@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon pour le mobileMenu -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="../style/certifications.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+
+    <title>Portfolio - Compétences d'Arthur</title>
+</head>
+<body id="body">
+
+    <!-- NavBar -->
+    <nav class="navbar" id="nav">
+        <div class="container flex">
+            <span class="logo">Arthur.<span class="b">B</span></span>
+
+            <div class="links" id="links">
+                <a href="arthur-bourst.fr">Accueil</a>
+                <a href="arthur-bourst.fr/pages/certification.html">Certifications</a>
+                <a href="arthur-bourst.fr/pages/etudes.html">Etudes</a>
+                <a href="arthur-bourst.fr/pages/competences.html">Compétences</a>
+                <a href="arthur-bourst.fr/pages/veille.html">Veille</a>
+
+                <a class="btn-download" href="src/pdf/cv.pdf" target="_blank">Télécharger son CV</a>
+            </div>
+        </div>
+        <div class="burger">
+            <i class="ri-menu-line active" id="menu" onclick="navbarMobile('open')"></i>
+            <i class="ri-close-line" id="close" onclick="navbarMobile('close')"></i>
+        </div>
+    </nav>
+
+    <!-- Section présentation certifications -->
+    <section class="presentation__certif">
+        <div class="container__certif">
+            <h1 class="title-pres">💪 Voici les certifications qu'Arthur a obtenu durant son BTS SIO.</h1>
+
+            <img src="../src/img/img4.png" alt="accueil-image" class="image-pres">
+        </div>
+    </section>
+
+    <!-- Section cartes certifications -->
+    <section class="certif">
+        <ul class="container__cardCertif">
+            <a class="card" href="../src/pdf/mooc_anssi.pdf" target="_blank">
+                <img src="../src/img/img_anssi.jpg" alt="anssi">
+                <p class="description">Certification du MOOC de l'ANSSI</p>
+            </a>
+
+            <a class="card" href="../src/pdf/mooc_rgpd.pdf" target="_blank">
+                <p class="description">Certification du MOOC du RGPD</p>
+                <img src="../src/img/img_rgpd.jpg" alt="rgpd">
+            </a>
+
+            <a class="card" href="../src/pdf/certif_pix.pdf" target="_blank">
+                <img src="../src/img/img_pix.png" alt="pix">
+                <p class="description">Certification PIX</p>
+            </a>
+        </ul>
+    </section>
+
+    
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/mobileMenu.js"></script>
+</body>
+</html>
