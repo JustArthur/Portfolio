@@ -68,7 +68,7 @@ a {
 
 /* -- Section de présentation -- */
 .presentation {
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@ a {
 }
 
 .content__pres {
-    margin: auto;
+    margin: 100px auto;
     width: 100%;
     padding: 20px;
     text-align: center;
