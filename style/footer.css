@@ -63,6 +63,8 @@ footer a:hover {
 .haut {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .haut .gauche {
@@ -121,9 +123,31 @@ hr {
 .bas {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .bas .droite .list {
     display: flex;
     gap: 40px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .haut {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .bas {
+        margin-bottom: 20px;
+    }
 }
