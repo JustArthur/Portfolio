@@ -5,37 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Icon pour le mobileMenu -->
+    <!-- Icones pour le mobileMenu -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Fichiers CSS -->
     <link rel="stylesheet" href="../style/etudes.css">
     <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
 
     <title>Portfolio - Etudes d'Arthur</title>
 </head>
 <body id="body">
 
     <!-- NavBar -->
-    <nav class="navbar" id="nav">
-        <div class="container flex">
-            <span class="logo">Arthur.<span class="b">B</span></span>
-
-            <div class="links" id="links">
-                <a href="https://arthur-bourst.fr/">Accueil</a>
-                <a href="https://arthur-bourst.fr/pages/certification.html">Certifications</a>
-                <a href="https://arthur-bourst.fr/pages/etudes.html">Etudes</a>
-                <a href="https://arthur-bourst.fr/pages/competences.html">Compétences</a>
-                <a href="https://arthur-bourst.fr/pages/veille.html">Veille</a>
-
-                <a class="btn-download" href="https://arthur-bourst.fr/src/pdf/CV - Bourst Arthur.pdf" target="blank">Télécharger son CV</a>
-            </div>
-        </div>
-        <div class="burger">
-            <i class="ri-menu-line active" id="menu" onclick="navbarMobile('open')"></i>
-            <i class="ri-close-line" id="close" onclick="navbarMobile('close')"></i>
-        </div>
-    </nav>
+    <nav class="navbar" id="nav"></nav>
+    <script>$(function() {$('#nav').load("../src/view/navbar.html");});</script>
 
     <!-- Section presentation etude -->
     <section class="presentation__etude">
@@ -77,7 +64,9 @@
         </div>
     </section>
 
-    
+    <!-- IMPORTATION DU FOOTER -->
+    <footer id="footerImport"></footer>     
+    <script>$(function() {$('#footerImport').load("../src/view/footer.html");});</script>
 
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/mobileMenu.js"></script>

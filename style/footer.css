@@ -1,0 +1,129 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    user-select: none;
+}
+
+:root {
+    --body-color: #FFFFFF;
+
+    --background-color-white: #FFFFFF;
+    --background-color-yellow: #FFCA3B;
+
+    --text-color-black: #363636;
+    --text-color-yellow: #FFCA3B;
+    --text-color-white: #FFFFFF;
+}
+
+
+
+
+
+footer {
+    min-height: 420px;
+    width: 100%;
+    background-color: var(--background-color-yellow);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+footer a {
+    text-decoration: none;
+    transition: color .1s ease;
+    color: var(--text-color-black);
+}
+
+footer a:hover {
+    transition: color .3s ease;
+    color: var(--text-color-white);
+}
+
+
+
+
+
+
+
+.footer-item {
+    margin: auto;
+    width: 90%;
+}
+
+.haut {
+    display: flex;
+    justify-content: space-between;
+}
+
+.haut .gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.haut .gauche h2 {
+    color: var(--text-color-black);
+    font-size: 2rem;
+}
+
+.haut .gauche .icons {
+    display: flex;
+    gap: 5px;
+}
+
+.haut .gauche a {
+    font-size: 2rem;
+    width: max-content;
+    cursor: pointer;
+    transition: color .1s ease;
+}
+
+.haut .gauche a:hover {
+    color: var(--text-color-white);
+    transition: color .3s ease;
+}
+
+
+.haut .droite .list-item.titre {
+    color: var(--text-color-black);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+hr {
+    margin: 80px 0 40px 0;
+    background-color: var(--text-color-black);
+    border: none;
+    height: 1px;
+}
+
+
+
+
+
+
+.bas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bas .droite .list {
+    display: flex;
+    gap: 40px;
+}
