@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icones pour le mobileMenu -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="../style/projets.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="style/scrollbarCustom.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Importation de la navbar -->
+    <nav class="navbar" id="nav"></nav>
+    <script>$(function() {$('#nav').load("../src/view/navbar.html");});</script>
+
+    <section class="projets">
+
+    </section>
+
+    <!-- Importation du footer -->
+    <footer id="footerImport"></footer>     
+    <script>$(function() {$('#footerImport').load("../src/view/footer.html");});</script>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/mobileMenu.js"></script>
+</body>
+</html>

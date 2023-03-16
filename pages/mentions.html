@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icones pour le mobileMenu -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="../style/mentions.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="style/scrollbarCustom.css">
+
+    <title>Portfolio - Mentions légales</title>
+</head>
+<body>
+
+    <!-- Importation de la navbar -->
+    <nav class="navbar" id="nav"></nav>
+    <script>$(function() {$('#nav').load("../src/view/navbar.html");});</script>
+
+    <section class="mentions">
+        <h1>Mentions légales :</h1>
+
+        <h2>Responsable de la publication :</h2>
+        <p>
+            Bourst Arthur<br>
+            arthur.bourst@proton.me<br>
+        </p>
+
+        <h2>Hébergeur :</h2>
+        <p>
+            GitHub Page<br>  
+            GitHub, Inc<bR>
+            San Francisco - Etats-Unis <br>
+        </p>
+
+        <p>
+            Propriété intellectuelle :
+            Tous les éléments présents sur ce site (textes, vidéos, logos, etc.) execpté les images sont la propriété exclusive de [Nom et Prénom]. Toute reproduction, représentation, modification, publication, adaptation totale ou partielle de ces éléments, par quelque moyen que ce soit, est interdite sans l'autorisation préalable et écrite de l'auteur.
+            Les images proviennent du site Icons8
+
+            Liens hypertextes :
+            Les liens hypertextes présents sur ce site et aiguillant les utilisateurs vers d'autres sites Internet n'engagent pas la responsabilité de [Nom et Prénom] quant au contenu de ces sites.
+
+            Limitation de responsabilité :
+            [Nom et Prénom] ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l'utilisateur, lors de l'accès au site [Nom de votre portfolio].
+
+            Droit applicable :
+            Le présent site est soumis au droit français.
+        </p>
+    </section>
+    
+
+    <!-- Importation du footer -->
+    <footer id="footerImport"></footer>     
+    <script>$(function() {$('#footerImport').load("../src/view/footer.html");});</script>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/mobileMenu.js"></script>
+</body>
+</html>

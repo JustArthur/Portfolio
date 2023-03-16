@@ -95,12 +95,22 @@ footer a:hover {
     transition: color .3s ease;
 }
 
+.haut .droite {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .haut .droite .list-item.titre {
     color: var(--text-color-black);
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 15px;
+}
+
+.haut .droite .list-item {
+    margin-bottom: 5px;
 }
 
 
