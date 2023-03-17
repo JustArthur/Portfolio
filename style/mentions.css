@@ -44,3 +44,11 @@ body {
 h3 {
     text-decoration: underline;
 }
+
+.mf-cursor {
+    color: var(--background-color-yellow);
+}
+
+.mf-cursor.-yellow {
+    color: var(--text-color-black);
+}

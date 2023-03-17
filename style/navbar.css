@@ -153,7 +153,7 @@ i.active {
     }
 
     .links a::before {
-        bottom: -5px;
+        bottom: -10px;
     }
 }
 

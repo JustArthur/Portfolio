@@ -18,7 +18,7 @@
     --background-color-white: #FFFFFF;
     --background-color-yellow: #FFCA3B;
 
-    --text-color-black: #000000;
+    --text-color-black: #363636;
     --text-color-yellow: #FFCA3B;
     --text-color-white: #FFFFFF;
 
@@ -162,7 +162,13 @@ a {
     min-width: 50px;
 }
 
+.mf-cursor {
+    color: var(--background-color-yellow);
+}
 
+.mf-cursor.-yellow {
+    color: var(--text-color-black);
+}
 
 
 

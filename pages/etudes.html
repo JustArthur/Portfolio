@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="style/scrollbarCustom.css">
 
+    <!-- Curseur de la souris -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
     <title>Portfolio - Etudes d'Arthur</title>
 </head>
 <body id="body">
@@ -41,7 +48,7 @@
     <section class="informatique">
         <div class="content__informatique">
             <div class="text">
-                <h2>💻 <span class="yellow">L'informatique</span> une grande passion.</h2>
+                <h2>💻 <span class="yellow" data-cursor="-yellow">L'informatique</span> une grande passion.</h2>
                 <p>Une fois mon Bac. Pro. Optique obtenu, je me suis réorienté dans
                     une filière où je prends plaisir à travailler même si je n'ai pas eu le diplôme
                     adéquat.
@@ -75,5 +82,7 @@
 
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/mobileMenu.js"></script>
+
+    <script>var cursor = new MouseFollower();</script>
 </body>
 </html>
