@@ -1,0 +1,46 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    user-select: none;
+}
+
+:root {
+    --body-color: #FFFFFF;
+
+    --background-color-white: #FFFFFF;
+    --background-color-yellow: #FFCA3B;
+
+    --text-color-black: #363636;
+    --text-color-yellow: #FFCA3B;
+    --text-color-white: #FFFFFF;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.mentions {
+    margin: 90px auto;
+    width: 80%;
+    height: max-content;
+}
+
+.mentions a {
+    text-decoration: underline;
+    color: var(--text-color-yellow);
+}
+
+h3 {
+    text-decoration: underline;
+}
