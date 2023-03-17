@@ -151,6 +151,10 @@ i.active {
     a.btn-download {
         display: none;
     }
+
+    .links a::before {
+        bottom: -5px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -174,9 +178,5 @@ i.active {
     .burger {
         z-index: 99;
         display: block;
-    }
-
-    .links a::before {
-        bottom: -5px;
     }
 }
