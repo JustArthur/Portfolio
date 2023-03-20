@@ -40,9 +40,14 @@
     <!-- Curseur de la souris -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <!-- Animation du texte -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 <body id="body">
@@ -56,7 +61,11 @@
         <div class="content__pres">
 
             <div class="text">
-                <h1 class="title-pres">👋 Bienvenue mon portfolio</h1>
+                <h1 class="ml6">
+                    <span class="text-wrapper">
+                        👋 <span class="letters">Bienvenue sur mon portfolio</span>
+                    </span>
+                </h1>
                 <p class="description">Je m'appelle Arthur Bourst, et je suis étudiant en 2ème année de <a href="http://saintluc.btssio.fr/" target="_blank">BTS SIO</a> à l'ensemble Saint-Luc.</p>
             </div>
 
@@ -65,9 +74,9 @@
     </section>
 
     <!-- Section informatique -->
-    <section class="propos">
-        <div class="content__propos">
-            <div class="text">
+    <section class="informatique">
+        <div class="content__informatique">
+            <div class="text animText">
                 <h2>🌐 Mes passions en développement <span class="yellow" data-cursor="-yellow">web</span>.</h2>
                 <p>Durant mes temps perdus, je m'amuse à créer des interface pour site ou application
                     web, certains de mes projets sont disponibles sur mon GitHub ou directement en ligne comme mon jeu 
@@ -84,7 +93,7 @@
         <div class="content__propos">
             <img src="src/img/img16.png" alt="propos-image" class="image-propos">
 
-            <div class="text">
+            <div class="text animText">
                 <h2>🎮 J'aime bien jouer aux <span class="yellow" data-cursor="-yellow">jeux vidéo</span>.</h2>
                 <p>Je suis est un joueur occasionnel, principalement
                     aux jeux en solo que ce soit aventure, course automobile ou
@@ -99,7 +108,7 @@
     <!-- Section du loisir -->
     <section class="photo">
         <div class="content__photo">
-            <div class="text">
+            <div class="text animText">
                 <h2>📸 La <span class="yellow" data-cursor="-yellow">photographie virtuelle</span> aussi.</h2>
                 <p>Depuis la découverte des modes photo dans les jeux vidéo,
                     j'en ai fait une nouvelle passion, une petite
@@ -116,7 +125,20 @@
     <footer id="footerImport" data-cursor="-yellow" ></footer>     
     <script>$(function() {$('#footerImport').load("src/view/footer.html");});</script>
 
-    <!-- Création du second curseur -->
-    <script>var cursor = new MouseFollower();</script>
+    <script src="scripts/textAnim.js"></script>
+    <script src="scripts/scrollReveal.js"></script>
+
+    <!-- Création du second curseur et des reveals -->
+    <script>
+        var cursor = new MouseFollower();
+
+        ScrollReveal({ reset: true });
+        ScrollReveal().reveal('.informatique', { delay: 200 });
+        ScrollReveal().reveal('.propos', { delay: 200 });
+        ScrollReveal().reveal('.photo', { delay: 200 });
+
+        ScrollReveal().reveal('.animText', { delay: 500 });
+
+    </script>
 </body>
 </html>

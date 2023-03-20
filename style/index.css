@@ -68,7 +68,7 @@ a {
 
 /* -- Section de présentation -- */
 .presentation {
-    margin-top: 20px;
+    margin-top: 40px;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -89,10 +89,67 @@ a {
     margin-bottom: 40px;
 }
 
+
+
+.ml6 {
+    position: relative;
+}
+  
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+
+
+
 .content__pres img {
     width: 100%;
     max-width: 700px;
     min-width: 150px;
+}
+
+
+
+
+/* -- Section a informatique -- */
+.informatique {
+    height: max-content;
+    width: 100%;
+    display: flex;
+}
+
+.informatique .content__informatique {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.content__informatique .text {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content__informatique img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
 }
 
 
@@ -127,7 +184,6 @@ a {
     max-width: 400px;
     min-width: 200px;
 }
-
 
 
 
@@ -183,13 +239,15 @@ a {
     }
 
     .propos .content__propos,
-    .photo .content__photo {
+    .photo .content__photo,
+    .informatique .content__informatique {
         flex-direction: column;
         text-align: center;
     }
 
     .content__propos .text,
-    .content__photo .text {
+    .content__photo .text,
+    .content__informatique .text {
         width: 100%;
     }
 }
