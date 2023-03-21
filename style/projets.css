@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    user-select: none;
+}
+
+:root {
+    --body-color: #FFFFFF;
+
+    --background-color-white: #FFFFFF;
+    --background-color-yellow: #FFCA3B;
+
+    --text-color-black: #363636;
+    --text-color-yellow: #FFCA3B;
+    --text-color-white: #FFFFFF;
+
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --p-font-size: 1rem;
+}
+
+body {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-color);
+}
+
+body.overflow {
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--text-color-black);
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    color: var(--text-color-black);
+    font-size: var(--h2-font-size);
+}
+
+p {
+    color: var(--text-color-black);
+    font-size: var(--p-font-size);
+}
+
+.yellow {
+    color: var(--text-color-yellow);
+}
+
+a {
+    color: var(--text-color-yellow);
+    text-decoration: underline;
+}
+
+
+
+
+/* -- Section de présentation -- */
+.projets {
+    margin-top: 40px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__projets {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.content__projets .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.ml6 {
+    position: relative;
+}
+  
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.content__projets img {
+    width: 100%;
+    max-width: 700px;
+    min-width: 150px;
+}
+
+
+
+/* Section de mes projets */
+.mes-projets {
+    width: 100%;
+    height: max-content;
+    display: flex;
+}
+
+ul.list-projets {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul.list-projets li {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 9px 9px 30px -12px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 9px 9px 30px -12px rgba(0,0,0,0.3);
+    -moz-box-shadow: 9px 9px 30px -12px rgba(0,0,0,0.3);
+}
+
+ul.list-projets li img{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 150px;
+}
+
+ul.list-projets .textes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+ul.list-projets li h3 {
+    font-size: var(--h1-font-size);
+    color: var(--text-color-black);
+}
+
+ul.list-projets li p {
+    font-size: var(--p-font-size);
+    flex-wrap: wrap;
+}
+
+ul.list-projets .btn {
+    position: relative;
+    width: max-content;
+    margin-top: auto;
+    border: 2px solid var(--background-color-yellow);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-color-black);
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+ul.list-projets .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--background-color-yellow);
+    transition: 0.2s;
+}
+
+ul.list-projets .btn:hover {
+    background-color: #ffcb3b25;
+    transition: 0.3s;
+}
+
+ul.list-projets .btn:hover::before {
+    width: 100%;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+    ul.list-projets li .textes {
+        gap: 20px;
+    }
+
+    ul.list-projets li {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    :root {
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+        --p-font-size: 1rem;
+    }
+
+    .projets .content__projets {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content__projets .text {
+        width: 100%;
+    }
+}
