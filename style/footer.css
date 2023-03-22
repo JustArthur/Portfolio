@@ -137,6 +137,10 @@ hr {
     gap: 30px;
 }
 
+.bas .gauche {
+    color: var(--text-color-black);
+}
+
 .bas .droite .list {
     display: flex;
     gap: 40px;

@@ -69,7 +69,7 @@ a {
 
 /* -- Section certification présentation -- */
 .presentation__veille {
-    height: max-content;
+    height: 100vh;
     width: 100%;
     display: flex;
     margin-top: 65px;
@@ -100,66 +100,100 @@ a {
 }
 
 
-/* -- Section cards veille -- */
-.veille {
+
+
+/* Section de mes veille */
+.mes-veille {
+    width: 100%;
     height: max-content;
-    width: 90%;
     display: flex;
 }
 
-.container__cardVeille {
-    width: 100%;
-    height: 100%;
-    padding: 50px;
+ul.list-veille {
+    margin: auto;
+    width: 90%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5vw;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul.list-veille li {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 9px 9px 30px -12px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 9px 9px 30px -12px rgba(0,0,0,0.3);
+    -moz-box-shadow: 9px 9px 30px -12px rgba(0,0,0,0.3);
+}
+
+ul.list-veille li img{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 150px;
+}
+
+ul.list-veille .textes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+ul.list-veille li h3 {
+    font-size: var(--h1-font-size);
+    color: var(--text-color-black);
+}
+
+ul.list-veille li p {
+    font-size: var(--p-font-size);
     flex-wrap: wrap;
 }
 
-.container__cardVeille a {
+ul.list-veille .btns {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+}
+
+ul.list-veille .btn {
     position: relative;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: .6s;
-    text-decoration: none;
-    cursor: pointer;
-    max-width: 500px;
-    min-width: 200px;
-    width: 100%;
-    max-height: 330px;
-    min-height: 150px;
-    overflow: hidden;
-}
-
-.container__cardVeille a:hover {
-    box-shadow: none;
-    transition: .6s;
-}
-
-.container__cardVeille img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.container__cardVeille .description {
-    position: absolute;
-    background-color: var(--background-color-white);
+    width: max-content;
+    border: 2px solid var(--background-color-yellow);
+    width: 180px;
     height: 50px;
-    width: 100%;
-    margin-top: -4px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    border-radius: 0 0 10px 10px;
-    bottom: 0;
-    left: 0;
-    font-size: var(--p-font-size);
-    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-color-black);
+    transition: 0.2s;
+    text-decoration: none;
 }
 
+ul.list-veille .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--background-color-yellow);
+    transition: 0.2s;
+}
 
+ul.list-veille .btn:hover {
+    background-color: #ffcb3b25;
+    transition: 0.3s;
+}
+
+ul.list-veille .btn:hover::before {
+    width: 100%;
+    transition: 0.3s;
+}
 
 .mf-cursor {
     color: var(--background-color-yellow);
@@ -170,11 +204,41 @@ a {
 }
 
 
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+    ul.list-veille li .textes {
+        gap: 20px;
+    }
+    
+    ul.list-veille li {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
 /* Responsive */
 @media screen and (max-width: 700px) {
     :root {
         --h1-font-size: 2rem;
         --h2-font-size: 1.5rem;
         --p-font-size: 1rem;
+    }
+
+    .veille .content__veille {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content__veille .text {
+        width: 100%;
     }
 }
