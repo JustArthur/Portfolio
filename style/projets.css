@@ -164,10 +164,15 @@ ul.list-projets li p {
     flex-wrap: wrap;
 }
 
+ul.list-projets .btns {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+}
+
 ul.list-projets .btn {
     position: relative;
     width: max-content;
-    margin-top: auto;
     border: 2px solid var(--background-color-yellow);
     width: 180px;
     height: 50px;
