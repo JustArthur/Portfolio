@@ -168,6 +168,7 @@ ul.list-projets .btns {
     margin-top: auto;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 ul.list-projets .btn {
