@@ -109,7 +109,7 @@ a {
 
 .content__projets img {
     width: 100%;
-    max-width: 700px;
+    max-width: 250px;
     min-width: 150px;
 }
 
@@ -146,6 +146,7 @@ ul.list-projets li img{
     width: 100%;
     max-width: 500px;
     min-width: 150px;
+    object-fit: cover;
 }
 
 ul.list-projets .textes {
