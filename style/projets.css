@@ -143,9 +143,7 @@ ul.list-projets li {
 
 ul.list-projets li img{
     border-radius: 10px;
-    width: 100%;
-    max-width: 500px;
-    min-width: 150px;
+    width: 500px;
     object-fit: cover;
 }
 
@@ -156,7 +154,7 @@ ul.list-projets .textes {
 }
 
 ul.list-projets li h3 {
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
     color: var(--text-color-black);
 }
 
@@ -227,6 +225,12 @@ ul.list-projets .btn:hover::before {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    ul.list-projets li img {
+        width: 100%;
+        max-width: 500px;
+        min-width: 150px;
     }
 }
 
