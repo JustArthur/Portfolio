@@ -147,9 +147,19 @@ ul.list-veille li h3 {
     color: var(--text-color-black);
 }
 
+
 ul.list-veille li p {
     font-size: var(--p-font-size);
     flex-wrap: wrap;
+}
+
+ul.list-veille p.categorie {
+    background-color: var(--background-color-yellow);
+    max-width: max-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 ul.list-veille .btns {

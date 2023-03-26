@@ -158,6 +158,21 @@ ul.list-projets li h3 {
     color: var(--text-color-black);
 }
 
+ul.list-projets .codes {
+    display: flex;
+    max-width: max-content;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+ul.list-projets .codes a {
+    color: var(--text-color-black);
+    background-color: var(--background-color-yellow);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 ul.list-projets li p {
     font-size: var(--p-font-size);
     flex-wrap: wrap;
