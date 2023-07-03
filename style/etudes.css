@@ -67,7 +67,7 @@ a {
 
 /* -- Section présentation étude -- */
 .presentation__etude {
-    height: max-content;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
     margin-top: 65px;
@@ -102,7 +102,7 @@ a {
 
 /* -- Section opticien -- */
 .opticien {
-    height: max-content;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
 }
@@ -134,7 +134,7 @@ a {
 
 /* -- Section informatique -- */
 .informatique {
-    height: max-content;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
 }

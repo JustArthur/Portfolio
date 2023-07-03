@@ -124,7 +124,7 @@ a {
 
 /* -- Section a informatique -- */
 .informatique {
-    height: 100vh;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
     margin-top: 20px;
@@ -158,7 +158,7 @@ a {
 
 /* -- Section a propos -- */
 .propos {
-    height: 100vh;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
 }
@@ -191,7 +191,7 @@ a {
 
 /* -- Section photo -- */
 .photo {
-    height: 100vh;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
 }

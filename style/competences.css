@@ -67,7 +67,7 @@ a {
 
 /* -- Section présentation étude -- */
 .presentation__competence {
-    height: max-content;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
     margin-top: 65px;
@@ -103,7 +103,7 @@ a {
 
 /* -- Section projetDev -- */
 .projetDev {
-    height: max-content;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
 }
@@ -135,7 +135,7 @@ a {
 
 /* -- Section tableauCompt -- */
 .tableauCompt {
-    height: max-content;
+    height: min(100vh, 110%);
     width: 100%;
     display: flex;
 }
