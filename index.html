@@ -62,7 +62,10 @@
                         👋 <span class="letters">Bienvenue sur mon portfolio</span>
                     </span>
                 </h1>
-                <p class="description">Je m'appelle Arthur Bourst, et je suis étudiant en 2ème année de <a href="http://saintluc.btssio.fr/" target="_blank">BTS SIO</a> à l'ensemble Saint-Luc.</p>
+                <p class="description">
+                    Je m'appelle Arthur Bourst, et je suis étudiant en 2ème année de <a href="http://saintluc.btssio.fr/" target="_blank">BTS SIO</a> à l'ensemble Saint-Luc.<br>
+                    Je suis passionné par la <span class="yellow" data-cursor="-yellow">conception</span> et la <span class="yellow" data-cursor="-yellow">création</span> de projets innovants !
+                </p>
             </div>
 
             <img src="src/img/img1.png" alt="icons8-accueil-image" class="image-pres">
@@ -72,7 +75,7 @@
     <!-- Section informatique -->
     <section class="informatique">
         <div class="content__informatique">
-            <div class="text animText">
+            <div class="text">
                 <h2>🌐 Mes passions en développement <span class="yellow" data-cursor="-yellow">web</span>.</h2>
                 <p>Durant mes temps perdus, je m'amuse à créer des interface pour site ou application
                     web, certains de mes projets sont disponibles sur mon GitHub ou directement en ligne comme mon jeu 
@@ -89,7 +92,7 @@
         <div class="content__propos">
             <img src="src/img/img16.png" alt="icons8-propos-image" class="image-propos">
 
-            <div class="text animText">
+            <div class="text">
                 <h2>🎮 J'aime bien jouer aux <span class="yellow" data-cursor="-yellow">jeux vidéo</span>.</h2>
                 <p>Je suis est un joueur occasionnel, principalement
                     aux jeux en solo que ce soit aventure, course automobile ou
@@ -104,7 +107,7 @@
     <!-- Section du loisir -->
     <section class="photo">
         <div class="content__photo">
-            <div class="text animText">
+            <div class="text">
                 <h2>📸 La <span class="yellow" data-cursor="-yellow">photographie virtuelle</span> aussi.</h2>
                 <p>Depuis la découverte des modes photo dans les jeux vidéo,
                     j'en ai fait une nouvelle passion, une petite
@@ -121,17 +124,9 @@
     <footer id="footerImport" data-cursor="-yellow"></footer>     
     <script>$(function() {$('#footerImport').load("src/view/footer.html");});</script>
 
-    <!-- Création du second curseur et des scrollReveals -->
+    <!-- Création du second curseur -->
     <script>
         var cursor = new MouseFollower();
-
-        ScrollReveal({ reset: false });
-        ScrollReveal().reveal('.informatique', { delay: 200 });
-        ScrollReveal().reveal('.propos', { delay: 200 });
-        ScrollReveal().reveal('.photo', { delay: 200 });
-
-        ScrollReveal().reveal('.animText', { delay: 400 });
-
     </script>
 </body>
 </html>
