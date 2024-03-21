@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/scrollbarCustom.css">
+    <link rel="stylesheet" href="../style/root.css">
 
     <!-- Curseur de la souris -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
@@ -33,11 +34,18 @@
     <script>$(function() {$('#nav').load("../src/view/navbar.html");});</script>
 
     <!-- Section présentation veille -->
-    <section class="presentation__veille">
-        <div class="container__veille">
-            <h1 class="title-pres">📬, ma veille.</h1>
+    <section class="veilles">
+        <div class="content__veilles">
 
-            <img src="../src/img/img15.png" alt="veille-image" class="image-pres">
+            <div class="text">
+                <h1 class="ml6">
+                    <span class="text-wrapper">
+                        📬 <span class="letters">Ma veille</span>
+                    </span>
+                </h1>
+            </div>
+
+            <img src="../src/img/img15.png" alt="veille-image" class="image-veille">
         </div>
     </section>
 
@@ -45,13 +53,39 @@
     <section class="mes-veille">
         <ul class="list-veille">
 
-            <!-- Easy Anti-cheat hack -->
+            <!-- J'ai entraîné une IA au jeu de la pastèque (Suika Game) -->
             <li class="list-item-veille">
-                <img src="../src/img/veille_1.png" alt="">
+                <img src="https://i.ytimg.com/vi/Uh8kNTog1q8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDaF-Pw2Te-GmJN-J-WxfzfqaEh1Q" class="image-veille" alt="">
 
                 <div class="textes">
-                    <h3>L'Anti-cheat d'un jeu-vidéo qui permet d'installer des ransomwares</h3>
-                    <p data-cursor="-yellow" class="categorie">Sécurisation des applications</p>
+                    <h3>J'ai entraîné une IA au jeu de la pastèque (Suika Game)</h3>
+
+                    <div class="profil">
+                        <div class="pp"><img src="https://yt3.googleusercontent.com/STeuQ_z3w1S-EAJj1NkFssjlmEOGghqAiigD5B0VhgDelU81YsStYXAudNz44pSjbAPwbAV-BoM=s176-c-k-c0x00ffffff-no-rj" alt=""></div>
+                        V2F
+                    </div>
+
+                    <p>
+                        "J'arrivais pas à avoir de pastèque sur Suika Game. Du coup, j'ai fait ce que n'importe quelle autre personne sensée aurait fait : j'ai créé une IA qui y parviendra à ma place. On va parler PPO, Machine Learning, algortihme, .."
+                    </p>
+                    <div class="btns">
+                        <a data-cursor-stick href="https://youtu.be/Uh8kNTog1q8?si=BdL--E4WnlLMbqGX" target="blank" class="btn">Voir la vidéo</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Le plus gros scandale du jeu-vidéo -->
+            <li class="list-item-veille">
+                <img src="../src/img/veille1.webp" class="image-veille" alt="">
+
+                <div class="textes">
+                    <h3>Le plus gros scandale du jeu-vidéo</h3>
+                    
+                    <div class="profil">
+                        <div class="pp"><img src="https://yt3.googleusercontent.com/c9wuY-xQqBByos_Rvr8RkN68Pxv1kouzbHU_Yn73JDwaNdH0-vAY_eU9Kauuk9IQxIATDoII7w=s176-c-k-c0x00ffffff-no-rj" alt=""></div>
+                        Underscore_
+                    </div>
+
                     <p>
                         Dans cette article il nous explique comment des hackers on réussi à contourner les anti-virus
                         grâce à un anti-cheat d'un jeu-vidéo où celui-ci nous permet d'installer des ransomware, même
@@ -63,51 +97,47 @@
                 </div>
             </li>
 
-            <!-- Captcha -->
+            <!-- Le Robot Anti-Feur -->
             <li class="list-item-veille">
-                <img src="../src/img/veille2.webp" alt="">
+                <img src="https://i.ytimg.com/vi/-aDmpj5hbYw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0TLUc86AsjbDIwH4J4WgNBI7jMw" class="image-veille" alt="">
 
                 <div class="textes">
-                    <h3>Les Captchas sont une immense arnaque</h3>
-                    <p data-cursor="-yellow" class="categorie">Sécurisation des applications</p>
+                    <h3>Le Robot Anti-Feur</h3>
+                    
+                    <div class="profil">
+                        <div class="pp"><img src="https://yt3.googleusercontent.com/STeuQ_z3w1S-EAJj1NkFssjlmEOGghqAiigD5B0VhgDelU81YsStYXAudNz44pSjbAPwbAV-BoM=s176-c-k-c0x00ffffff-no-rj" alt=""></div>
+                        V2F
+                    </div>
+                    <p>
+                        "Quoi ? Feur. Cette blague de Twitter a assez durée ! J'ai décidé de coder quelques petits trucs pour mettre des bâtons dans les roues de ceux qui font cette blague ! 
+
+                        Dans cette vidéo, je te montre ce que j'ai programmé avec le langage de programmation Python (principalement, mais j'y code aussi des sites web en Javascript) !""
+                    </p>
+                    <div class="btns">
+                        <a data-cursor-stick href="https://youtu.be/U8zbiX7j2MY" target="blank" class="btn">Voir la vidéo</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <!-- Captcha -->
+            <li class="list-item-veille">
+                <img src="../src/img/veille2.webp" class="image-veille" alt="">
+
+                <div class="textes">
+                    <h3>Notre trouvaille scandaleuse sur les Captchas</h3>
+
+                    <div class="profil">
+                        <div class="pp"><img src="https://yt3.googleusercontent.com/c9wuY-xQqBByos_Rvr8RkN68Pxv1kouzbHU_Yn73JDwaNdH0-vAY_eU9Kauuk9IQxIATDoII7w=s176-c-k-c0x00ffffff-no-rj" alt=""></div>
+                        Underscore_
+                    </div>
+
                     <p>
                         Cette vidéo nous parle de la sécurisation des sites et aplications souvent utilisé, les capctchas, c'est quoi un captcha, comment on peut les
                         détrourner, pourquoi ils ne marcheront jamais,...
                     </p>
                     <div class="btns">
                         <a data-cursor-stick href="https://youtu.be/1CeUu8j7xsQ" target="blank" class="btn">Voir la vidéo</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Le projet fou du créateur de Fortnite -->
-            <li class="list-item-veille">
-                <img src="../src/img/veille3.webp" alt="">
-
-                <div class="textes">
-                    <h3>Le projet fou du créateur de Fortnite</h3>
-                    <p data-cursor="-yellow" class="categorie">Programation des jeux vidéo</p>
-                    <p>
-                        Cette vidéo nous parle du projet réalisé par Tim Sweeney.
-                    </p>
-                    <div class="btns">
-                        <a data-cursor-stick href="https://youtu.be/C0gr8jXRZUY" target="blank" class="btn">Voir la vidéo</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Le projet fou du créateur de Fortnite -->
-            <li class="list-item-veille">
-                <img src="../src/img/veille4.webp" alt="">
-
-                <div class="textes">
-                    <h3>Comment fonctionne une "zip bomb" ?</h3>
-                    <p data-cursor="-yellow" class="categorie">Sécurisation des OS</p>
-                    <p>
-                        La zip bomb est une ancienne technique qui simule un virus sur un ordinateur.
-                    </p>
-                    <div class="btns">
-                        <a data-cursor-stick href="https://youtu.be/U8zbiX7j2MY" target="blank" class="btn">Voir la vidéo</a>
                     </div>
                 </div>
             </li>

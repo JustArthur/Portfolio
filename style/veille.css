@@ -20,6 +20,7 @@
 
     --text-color-black: #000000;
     --text-color-yellow: #FFCA3B;
+    --yellow-color-opacity-25: #ffcb3b25;
     --text-color-white: #FFFFFF;
 
     --h1-font-size: 3rem;
@@ -64,39 +65,51 @@ a {
 }
 
 
-
-
-
-/* -- Section certification présentation -- */
-.presentation__veille {
+/* -- Section de présentation -- */
+.veilles {
+    margin-top: 40px;
     height: min(100vh, 110%);
     width: 100%;
     display: flex;
-    margin-top: 65px;
+    flex-direction: column;
 }
 
-.presentation__veille .container__veille {
+.content__veilles {
+    margin: auto;
     width: 100%;
-    height: 100%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5vw;
-}
-
-.container__veille .title-pres {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    padding: 20px;
     text-align: center;
 }
 
-.container__veille img {
+.content__veilles .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.ml6 {
+    position: relative;
+}
+  
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.content__veilles img {
     width: 100%;
-    max-width: 400px;
-    min-width: 200px;
+    max-width: 450px;
+    min-width: 150px;
 }
 
 
@@ -104,6 +117,7 @@ a {
 
 /* Section de mes veille */
 .mes-veille {
+    margin-top: 50px;
     width: 100%;
     height: max-content;
     display: flex;
@@ -118,7 +132,7 @@ ul.list-veille {
 }
 
 ul.list-veille li {
-    background-color: white;
+    background-color: var(--background-color-white);
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -128,7 +142,7 @@ ul.list-veille li {
     -moz-box-shadow: 9px 9px 30px -12px rgba(0,0,0,0.3);
 }
 
-ul.list-veille li img{
+ul.list-veille li img.image-veille{
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
@@ -160,6 +174,37 @@ ul.list-veille p.categorie {
     border-radius: 5px;
     flex-wrap: wrap;
     text-align: center;
+}
+
+ul.list-veille .profil {
+    width: max-content;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+}
+
+ul.list-veille .profil .pp {
+    max-width: 48px;
+    min-width: 20px;
+    width: 100%;
+
+    max-height: 48px;
+    min-height: 20px;
+    height: 100%;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+ul.list-veille .profil .pp img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
 }
 
 ul.list-veille .btns {
@@ -197,7 +242,7 @@ ul.list-veille .btn::before {
 }
 
 ul.list-veille .btn:hover {
-    background-color: #ffcb3b25;
+    background-color: var(--yellow-color-opacity-25);
     transition: 0.3s;
 }
 
@@ -244,12 +289,12 @@ ul.list-veille .btn:hover::before {
         --p-font-size: 1rem;
     }
 
-    .veille .content__veille {
+    .veilles .content__veilles {
         flex-direction: column;
         text-align: center;
     }
 
-    .content__veille .text {
+    .content__veilles .text {
         width: 100%;
     }
 }

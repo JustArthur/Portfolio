@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
 
+@font-face {
+    font-family: 'VCR_OSD';
+    src: url('../src/fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+  
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +23,9 @@
     --background-color-white: #FFFFFF;
     --background-color-yellow: #FFCA3B;
 
-    --text-color-black: #363636;
+    --text-color-black: #000000;
     --text-color-yellow: #FFCA3B;
+    --yellow-color-opacity-25: #ffcb3b25;
     --text-color-white: #FFFFFF;
 
     --h1-font-size: 3rem;
@@ -49,6 +55,17 @@ h2 {
     font-size: var(--h2-font-size);
 }
 
+h3.backrooms {
+    font-family: "VCR_OSD", sans-serif;
+    text-transform: uppercase;
+}
+
+h3.backrooms span.red {
+    color: #b80000;
+    font-family: "VCR_OSD", sans-serif;
+    text-transform: uppercase;
+}
+
 p {
     color: var(--text-color-black);
     font-size: var(--p-font-size);
@@ -62,6 +79,7 @@ a {
     color: var(--text-color-yellow);
     text-decoration: underline;
 }
+
 
 
 
@@ -143,7 +161,8 @@ ul.list-projets li {
 
 ul.list-projets li img{
     border-radius: 10px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
