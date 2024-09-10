@@ -152,20 +152,13 @@ i.active {
     display: block;
 }
 
-
-@media screen and (max-width: 1050px) {
-    a.btn-download {
+@media screen and (max-width: 1000px) {
+    .links {
         display: none;
     }
 
     .links a::before {
         bottom: -10px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .links {
-        display: none;
     }
 
     .links.active {
